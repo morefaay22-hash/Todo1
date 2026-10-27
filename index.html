@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff0f6" />
+
+    <title>بسبوسه 💗 | Todo List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="top-header">
+      <button
+        class="brand"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+      >
+        <span class="brand-name">بسبوسه</span>
+        <span class="brand-heart">♥</span>
+      </button>
+    </header>
+
+    <main class="container">
+      <div class="title-icon">🎀</div>
+
+      <h1>Todo List</h1>
+
+      <p class="subtitle">Your little world of tasks 💗</p>
+
+      <div class="input-section">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Write something lovely..."
+          maxlength="200"
+          aria-label="Enter a task"
+        />
+
+        <button id="add-btn">Add <span>♥</span></button>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <p id="empty-message">
+        <span class="empty-heart">♡</span>
+        <br />
+        No tasks yet. Add something lovely!
+      </p>
+
+      <footer class="footer">Made with <span>♥</span> for بسبوسه</footer>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
